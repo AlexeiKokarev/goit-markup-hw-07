@@ -14,18 +14,18 @@
 </head>
 
 <body>
-    <header class="top-section">
+    <header class="header-section">
         <div class="container container-flex">
             <nav class="navbar">
-                <a href="#" class="nav-logo"><span class="nav-logo-colored">Web</span>Studio </a>
-                <ul class="navbar-item">
-                    <li class="nav-list">
-                        <a class="nav-link current" href="./index.html">Студия</a></li>
-                    <li class="nav-list">
-                        <a class="nav-link" href="./portfolio.html">Портфолио</a>
+                <a href="#" class="navbar-logo"><span class="navbar-logo-colored">Web</span>Studio </a>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a class="navbar-link current" href="./index.html">Студия</a></li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li class="nav-list">
-                        <a class="nav-link" href="./#">Контакты</a></li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="./#">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contacts">
@@ -52,7 +52,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="titel-text">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="btn-primary" data-modal-open>Заказать услугу</button>
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--secctin2-->
@@ -98,7 +98,7 @@
         <!--secctin3-->
         <section class="section work-pd">
             <div class="container">
-                <h2 class="subtitel-big">Чем мы занимаемся</h2>
+                <h2 class="subtitel">Чем мы занимаемся</h2>
                 <ul class="work-specifications">
                     <li class="work-specifications-item"><img src=./image/box1.jpg alt="desctop" width=370>
                         <div class="box">
@@ -121,7 +121,7 @@
         <!--secctin4-->
         <section class="section team-bg">
             <div class="container">
-                <h2 class="subtitel-big">Наша команда</h2>
+                <h2 class="subtitel">Наша команда</h2>
                 <ul class="team-gallery">
                     <li class="team-gallery-item"><img src=./image/teamcard1.jpg alt="teammate" width=270>
                         <div class="border-name">
@@ -258,7 +258,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="subtitel-big">Постоянные клиенты</h2>
+                <h2 class="subtitel">Постоянные клиенты</h2>
                 <ul class="clients-list">
                     <li class="clients-item"><a class="client-link" href="#"><svg class="clients-svg">
                              <use href="./image/sprite.svg#icon-Logo-1"></use>
@@ -283,18 +283,18 @@
         </section>
     </main>
     <!--footer-->
-    <footer class="footer-custom ">
+    <footer class="footer ">
         <div class="container-footer">
             <div class="container-footer-contacts">
-                <a href=" " class="nav-logo-light "><span class="nav-logo-colored ">Web</span>Studio </a>
+                <a href=" " class="nav-logo-footer "><span class="navbar-logo-colored ">Web</span>Studio </a>
                 <ul class="contacts-list footer-list ">
-                    <li class="contat-item-light ">
-                        <p class="address-light ">г. Киев, пр-т Леси Украинки, 26</p>
+                    <li class="contat-item-footer ">
+                        <p class="address-footer ">г. Киев, пр-т Леси Украинки, 26</p>
                     </li>
-                    <li class="contat-item-light contact-margin ">
-                        <a class="contact-link-light " href="info@devstudio.com "> info@devstudio.com </a></li>
-                    <li class="contat-item-light">
-                        <a class="contact-link-light " href="+380961111111 "> +38 096 111 11 11</a></li>
+                    <li class="contat-item-footer ">
+                        <a class="contact-link-footer " href="info@devstudio.com "> info@devstudio.com </a></li>
+                    <li class="contat-item-footer">
+                        <a class="contact-link-footer " href="+380961111111 "> +38 096 111 11 11</a></li>
                 </ul>
             </div>
             <div class="container-footer-svg">
@@ -332,7 +332,7 @@
                     <label for=mail class="mail-label"></label>
                     <input class="footer-input" type="email" name="mail" placeholder="E-mail" id="email" autocomplete="on" />
                     <button type="button" class="btn-subscribe">Подписаться
-                    <svg class="btn-icon" width="24" height="24">
+                    <svg class="button-icon" width="24" height="24">
                         <use href="./image/sprite.svg#icon-icon-send"></use>
                     </svg></button>
                 </form>
@@ -343,7 +343,7 @@
 
     </footer>
     <div class=" backdrop is-hidden " data-modal>
-        <div class="modal "><button type="button " class="btn-modal " data-modal-close>
+        <div class="modal "><button type="button " class="button-modal " data-modal-close>
             <svg class="modal-close-btn ">
             <use href="./image/closebtn.svg#icon-closebtn "></use></svg></button>
             <h2 class="modal-titel">Оставьте свои данные, мы вам перезвоним</h2>
@@ -381,7 +381,7 @@
                     </svg></span>
                 <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю<a class="modal-policy-link" href="#">Условия договора</a></span>
                 </label>
-                <button type="submit" class="btn-submit">Отправить</button> </form>
+                <button type="submit" class="button-submit">Отправить</button> </form>
         </div>
     </div>
     <script src="./js/modal.js "></script>
