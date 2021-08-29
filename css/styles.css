@@ -625,13 +625,15 @@ img {
 }
 
 .container-footer-subscribe {
+    display: inline-block;
+    align-items: baseline;
+    justify-content: center;
     margin-left: 93px;
 }
 
 .container-footer {
     display: flex;
     align-items: baseline;
-    justify-content: baseline;
 }
 
 .box {
@@ -739,10 +741,10 @@ img {
 
 .modal-close-btn {
     position: absolute;
-    top: 6px;
-    right: 6px;
-    width: 18px;
-    height: 18px;
+    top: 7px;
+    right: 7px;
+    width: 16px;
+    height: 16px;
     fill: #212121;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -765,7 +767,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-color);
-    margin-top: 40px;
     margin-bottom: 12px;
 }
 
@@ -790,7 +791,6 @@ img {
 }
 
 .btn-subscribe {
-    position: relative;
     margin-left: 12px;
     width: 200px;
     height: 50px;
@@ -803,9 +803,14 @@ img {
     border-radius: 4px;
     border: transparent;
     cursor: pointer;
+    display: inline-block;
+    align-items: baseline;
 }
 
 .button-icon {
+    position: absolute;
+    bottom: 13px;
+    top: 13px;
     margin-left: 10px;
     fill: #FFFFFf;
 }
@@ -821,8 +826,15 @@ img {
     outline: none;
 }
 
-.modal-fild:not(:last-child) {
+.modal-fild {
     margin-bottom: 10px;
+}
+
+.coment-fild {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .icon-fild {
@@ -831,12 +843,6 @@ img {
     bottom: 50%;
     left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form {
-    width: 448px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 .form-input {
@@ -848,22 +854,23 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus,
-.form-input:hover {
+.form-input:focus {
     border-color: var(--accent-color);
 }
 
 .coment-input {
+    padding: 12px 16px;
+    resize: none;
     outline: none;
     cursor: pointer;
 }
 
-.coment-input:focus,
-.coment-input:hover {
+.coment-input:focus {
     border-color: var(--accent-color);
 }
 
 .fild-item {
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -893,12 +900,11 @@ img {
     margin-right: 8px;
     margin-left: 43px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .checkbox-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     left: 1px;
     top: 3px;
     fill: #FFFFFF;
@@ -914,7 +920,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     margin-bottom: 30px;
 }
 
