@@ -1,0 +1,33 @@
+.features {
+    display: flex;
+}
+
+.features__list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: $accent-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.features__text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $second-color;
+}
+
+.features__svg {
+    width: 70px;
+    height: 70px;
+}
+
+.container__svg {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
