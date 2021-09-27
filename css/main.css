@@ -1038,8 +1038,8 @@ img {
   height: 44px;
 }
 
-.social__member--link:hover .social__member,
-.social__member--link:focus .social__member {
+.social__member--link:hover,
+.social__member--link:focus {
   background-color: #2196f3;
 }
 

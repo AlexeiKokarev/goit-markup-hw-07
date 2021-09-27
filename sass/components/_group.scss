@@ -48,10 +48,11 @@
 
 .social__member--link {
     @extend %sociallinks;
-    &:hover .social__member,
-    &:focus .social__member {
-        background-color: $accent-color;
-    }
+}
+
+.social__member--link:hover,
+.social__member--link:focus {
+    background-color: $accent-color;
 }
 
 .social__member--link:hover .social__member,
