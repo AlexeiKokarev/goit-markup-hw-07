@@ -1,14 +1,14 @@
 (() => {
     const refs = {
-        openModalBtn: document.querySelector('hero__button'),
-        closeModalBtn: document.querySelector('window__modal--button'),
-        modal: document.querySelector('window'),
+        openModalBtn: document.querySelector('[data-modal-open]'),
+        closeModalBtn: document.querySelector('[data-modal-close]'),
+        modal: document.querySelector('[data-modal]'),
     };
 
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
 
     function toggleModal() {
-        refs.modal.classList.toggle('window__is--hidden');
+        refs.modal.classList.toggle('is-hidden');
     }
 })();
