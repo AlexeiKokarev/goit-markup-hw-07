@@ -540,7 +540,7 @@ img {
   pointer-events: none;
 }
 
-.window.window__is--hidden .modal {
+.window.window__is--hidden .window__modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
 }
@@ -799,7 +799,7 @@ img {
 .features__title {
   font-size: 14px;
   font-weight: 700;
-  color: #2196f3;
+  color: #212121;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
