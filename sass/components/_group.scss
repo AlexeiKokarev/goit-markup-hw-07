@@ -1,18 +1,17 @@
-.team__gallery {
+.team {
     display: flex;
 }
 
-.team__gallery--item {
+.team__item {
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.team__gallery--item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.team__gallery--member {
+.team__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -20,7 +19,7 @@
     margin-bottom: 10px;
 }
 
-.team__gallery--text {
+.team__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -28,40 +27,37 @@
     margin-bottom: 16px;
 }
 
-.social__member {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__member--list {
+.team__socials {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.social__member--item {
+.team__socials--icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .team__socials--link:hover &,
+    .team__socials--link:focus & {
+        fill: #FFFFFF;
+    }
+}
+
+.team__socials--item {
     width: 44px;
     height: 44px;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
-.social__member--link {
+.team__socials--link {
     @extend %sociallinks;
-}
-
-.social__member--link:hover,
-.social__member--link:focus {
-    background-color: $accent-color;
-}
-
-.social__member--link:hover .social__member,
-.social__member--link:focus .social__member {
-    fill: #FFFFFF;
-}
-
-.social__member--item:not(:last-child) {
-    margin-right: 10px;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
 }
 
 .border__name {

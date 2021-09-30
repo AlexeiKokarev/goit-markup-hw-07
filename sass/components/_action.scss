@@ -1,16 +1,19 @@
+.work {
+    display: flex;
+}
+
 .work__specifications--list {
     display: flex;
 }
 
-.work__specifications--item {
+.work__item {
     position: relative;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.work__specifications--item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.subtitel__specifications {
+.work__title {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
@@ -29,8 +32,4 @@
     background: rgba(47, 48, 58, 0.8);
     bottom: 0;
     left: 0;
-}
-
-.work__specifications {
-    display: flex;
 }

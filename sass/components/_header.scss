@@ -1,7 +1,16 @@
-.header__section {
+.header {
     border-bottom: 1px solid #EEEEEE;
     height: 80px;
     display: flex;
+}
+
+.container__header {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
 }
 
 .navbar__logo {
@@ -13,11 +22,6 @@
 
 .navbar__logo--colored {
     color: $accent-color;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
 }
 
 .navbar__list {
@@ -68,7 +72,7 @@
     margin-right: 50px;
 }
 
-.contact__link {
+.contacts__link {
     color: $main-color;
     font-weight: 500;
     display: block;
@@ -80,46 +84,18 @@
     }
 }
 
-.contact__link:hover .contact__svg--mail,
-.contact__link:focus .contact__svg--mail {
-    fill: $accent-color;
-}
-
-.container__flex {
-    display: flex;
-}
-
-.contact__svg--mail {
-    width: 16px;
-    height: 12px;
+.contacts__icon {
     fill: #757575;
     margin-right: 10px;
     position: relative;
     top: 2px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact__svg--mail:focus,
-.contact__svg--mail:hover {
-    fill: $accent-color;
-}
-
-.contact__svg--phone {
-    width: 10px;
-    height: 16px;
-    fill: #757575;
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact__link:hover .contact__svg--phone,
-.contact__link:focus .contact__svg--phone {
-    fill: $accent-color;
-}
-
-.contact__svg--phone:focus,
-.contact__svg--phone:hover {
-    fill: $accent-color;
+    &:focus,
+    &:hover {
+        fill: $accent-color;
+    }
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+        fill: $accent-color;
+    }
 }

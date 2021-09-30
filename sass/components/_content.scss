@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.features__list:not(:last-child) {
+.features__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -25,7 +25,7 @@
     height: 70px;
 }
 
-.container__svg {
+.features__box {
     background-color: #F5F4FA;
     border-radius: 4px;
     padding: 25px 100px;
