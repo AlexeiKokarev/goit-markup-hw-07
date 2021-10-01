@@ -43,17 +43,15 @@ img {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    &--nopaddingtop {
+        padding-top: 0px;
+    }
+    &--background {
+        background-color: #F5F4FA;
+    }
 }
 
-.section__nopaddingtop {
-    padding-top: 0px;
-}
-
-.section__background {
-    background-color: #F5F4FA;
-}
-
-.section__titel {
+.section__title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.18;

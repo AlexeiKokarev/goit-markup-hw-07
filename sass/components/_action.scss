@@ -2,10 +2,6 @@
     display: flex;
 }
 
-.work__specifications--list {
-    display: flex;
-}
-
 .work__item {
     position: relative;
     &:not(:last-child) {
@@ -22,7 +18,7 @@
     text-transform: uppercase;
 }
 
-.box {
+.work__box {
     display: flex;
     justify-content: center;
     align-items: center;
